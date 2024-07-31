@@ -82,7 +82,6 @@
                         <span>Security</span>
                     </div>
                     <div class="col-md-12 infos">
-                        
                     </div>
                 </div>
             </div>
@@ -109,16 +108,21 @@
                 </div>
             </div>
         </div>
-        <div class="button-app">
+        <div class="button-app-footer" > 
+            <div>  
+                <span>Veron.App@hotmail.com</span>
+            </div>
+           <div>
             <button>Download on the ​App Store</button>
             <button class="google-play">Get in on Google play ​</button>
+           </div>
+           
         </div>
     </div>
   </div>
 </template>
 
 <script>
-import { faDriversLicense } from '@fortawesome/free-regular-svg-icons';
 
 export default {
   name: 'PresentationPage',
@@ -195,12 +199,19 @@ ul li {
     font-size: 100px;
 }
 
+
 .button-app {
     display: flex;
     justify-content: flex-end;
+    margin-top: 250px;
+}
+.button-app-footer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 250px;
 }
 
-.button-app button {
+.button-app button, .button-app-footer button {
     border-radius: 5px;
     background-color: #92d05000;
     width: 214px;
@@ -266,7 +277,7 @@ progress::-webkit-progress-bar {
 }
 
 .flex-end {
-text-align: end;
+    text-align: end;
 }
 
 .flex-center {

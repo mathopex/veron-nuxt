@@ -69784,7 +69784,7 @@ function shouldScrollToTop(route) {
 
 
 
-const _ded51a8a = () => interopDefault(__webpack_require__.e(/* import() | pages/index */ 2).then(__webpack_require__.bind(null, 97)));
+const _ded51a8a = () => interopDefault(__webpack_require__.e(/* import() | pages/index */ 2).then(__webpack_require__.bind(null, 96)));
 const emptyFn = () => {};
 external_vue_default.a.use(external_vue_router_default.a);
 const routerOptions = {
@@ -70437,7 +70437,7 @@ const layouts = {
   }
 });
 // CONCATENATED MODULE: ./.nuxt/components/index.js
-const PresentationPage = () => __webpack_require__.e(/* import() | components/presentation-page */ 1).then(__webpack_require__.bind(null, 94)).then(c => wrapFunctional(c.default || c));
+const PresentationPage = () => __webpack_require__.e(/* import() | components/presentation-page */ 1).then(__webpack_require__.bind(null, 93)).then(c => wrapFunctional(c.default || c));
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {
@@ -71377,12 +71377,6 @@ const createNext = ssrContext => opts => {
   await beforeRender();
   return _app;
 });
-
-/***/ }),
-/* 89 */
-/***/ (function(module, exports) {
-
-module.exports = require("@fortawesome/free-regular-svg-icons");
 
 /***/ })
 /******/ ]);
