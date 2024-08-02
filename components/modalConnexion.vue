@@ -1,9 +1,9 @@
 <template>
-      <div class="modal">
+      <div v-show="show === true" class="modal">
         <h1>SignIn/connexion</h1>
         <form @submit.prevent="onSubmit">
           <div class="form-group">
-            <label for="email">Identifiant :</label>
+            <label for="email" style="    margin-left: 22px; margin-bottom: 15px;">Identifiant :</label>
             <input type="text" id="email" name="email" v-model="form.email">
           </div>
           <div class="form-group">
@@ -30,21 +30,22 @@
         }
     },
     methods: {
-        async onSubmit() {
-            this.isLoading = true
-            try {
-              await this.$store.dispatch(`authModule/${LOGIN}`, {
-                email: this.form.email,
-                password: this.form.password
-              })
-            } catch (e) {
-              this.isLoading = false
-              console.log(e)
-            }
-          },
+      async onSubmit() {
+          this.isLoading = true
+          try {
+            await this.$store.dispatch(`authModule/${LOGIN}`, {
+              email: this.form.email,
+              password: this.form.password
+            })
+            this.$emit('close')
+          } catch (e) {
+            this.isLoading = false
+            console.log(e)
+          }
+        },
       closeModal() {
         this.$emit('close')
-      }
+      } 
     }
   }
   </script>
@@ -53,15 +54,31 @@
    .modal {
     display: block;
     position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
+    left: 40%;
+    top: 40%;
+    width: 551px;
+    height: 300px;
     overflow: auto;
     background-color: #8BC34A;
     border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    border: 2px solid black;
+}
+
+.modal h1 {
+  margin-bottom: 30px;
+}
+
+.modal button {
+  background-color: black;
+  color: white;
+  margin-left:0px;
+  margin-left: 109px;
+  margin-top: 15px;
+
 }
   </style>
   

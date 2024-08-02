@@ -10,6 +10,6 @@ export default {
 
 <style>
 #__layout{
-  background-color: #92D050;
+  background: linear-gradient(to bottom, #92D050, #FFFFFF);
 }
 </style>

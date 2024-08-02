@@ -1,11 +1,11 @@
 let BASE_URL
 
-// if (process.env.NODE_ENV === 'production') {
-//   BASE_URL = 'https://api.pro-choc.com'
-// } else {
-// }
-// // __ URI des routes API
-BASE_URL = 'https://127.0.0.1:8000'
+if (process.env.NODE_ENV === 'production') {
+  BASE_URL = 'http://api.veron-app.com/'
+} else {
+  BASE_URL = 'https://127.0.0.1:8000'
+}
+// __ URI des routes API
 export const URI = {
   user: `${BASE_URL}/api/users`,
   authenticationToken: `${BASE_URL}/authentication_token`,

@@ -1,6 +1,7 @@
 <template>
     <div class="container-fluid">
-        <modalConnexion/>
+        <modalConnexion :show="showModal" @close="showModal = false"/>
+        <modalInscription :show="showModal" @close="showModal = false"/>
         <div class="section" id="section1">
             <div class="flex col-md-12">
             <div class="col-md-4 flex-veron">
@@ -17,8 +18,8 @@
 
             <div class="col-md-4">
                 <div class="flex-button">
-                    <button class="noir">Sign Up</button>
-                    <button @click="showModal = true">Login</button>
+                    <button @click="modalInscription()" class="noir">Sign Up</button>
+                    <button @click="modalConnexion()">Login</button>
                 </div>
             </div>
         </div>
@@ -123,12 +124,22 @@
 </template>
 <script>
  import modalConnexion from './modalConnexion.vue'
+ import modalInscription from './modalInscription.vue'
 export default {
-    components: { modalConnexion },
+    components: { modalConnexion, modalInscription},
     name: 'PresentationPage',
     data() {
         return {
             showModal: false
+        }
+    },
+
+    methods: {
+        modalInscription(){
+            this.showModal = true
+        },
+        modalConnexion() {
+            this.showModal = true
         }
     }
 }
@@ -137,6 +148,7 @@ export default {
 .container-fluid {
   width: 98.5vw;
   height: 99vh;
+  color: white
 }
 
 .section {
@@ -147,7 +159,7 @@ export default {
 
 /* Ajoutez des couleurs ou d'autres styles pour différencier les sections */
 #section1 {
-  background-color: #92D050 /* Couleur semi-transparente */
+ background: linear-gradient(to bottom, #92D050, #FFFFFF);
 }
 
 #section2 {
@@ -199,7 +211,7 @@ ul li {
 }
 
 .titre {
-    margin-top: 370px;;
+    margin-top: 30px;
     text-align: center;
     font-size: 100px;
 }

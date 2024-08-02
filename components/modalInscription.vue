@@ -1,20 +1,102 @@
-<!-- <template>
-    <div v-show="show" class="modal">
-        <h1>SignIn/connexion</h1>
-        <form>
-            <div class="modal-content">
-                <span @click="closeModal" class="close">&times;</span>
-                <div class="form-group">
-                    <label for="username">Identifiant :</label>
-                    <input type="text" id="username" name="username">
-                </div>
+<template>
+    <div v-show="show === true" class="modal">
+      <h1>SignIn/connexion</h1>
+      <form @submit.prevent="onSubmit">
+        <div class="form-group">
+          <label for="email" style="margin-left: 22px; margin-bottom: 15px;">Email :</label>
+          <input type="text" id="email" name="email" v-model="form.email">
+        </div>
+        <div class="form-group">
+          <label for="password">Mot de passe :</label>
+          <input type="password" id="password" name="password" v-model="form.password">
+        </div>
+        <div class="form-group">
+          <label for="firstName">First Name :</label>
+          <input type="text" id="firstName" name="firstName" v-model="form.firstName">
+        </div>
 
-                <div class="form-group">
-                    <label for="password">Mot de passe :</label>
-                    <input type="password" id="password" name="password">
-                </div>
-            </div>
-            <button type="submit" class="btn">Connexion</button>
-        </form>
+        <div class="form-group">
+          <label for="lastName">Last Name :</label>
+          <input type="text" id="lastName" name="lastName" v-model="form.lastName">
+        </div>
+
+        <div class="form-group">
+          <label for="address">Last Name :</label>
+          <input type="text" id="address" name="address" v-model="form.address">
+        </div>
+        <button type="submit" class="btn">Inscription</button>
+      </form>
     </div>
-</template> -->
+
+</template>
+
+<script>
+import { REGISTER_USER } from '~/store/storeConst/actions.type'
+export default {
+  name: 'ModalConnexion',
+  props: ['show'],
+  data(){
+      return {
+          form: {
+            email: '',
+            password: '',
+            firstName: '',
+            lastName: '',
+            address: ''
+        }
+      }
+  },
+  methods: {
+    async onSubmit() {
+        try {
+            this.$store.dispatch(`registerModule/${[REGISTER_USER]}`, {
+                email: this.form.email,
+                password: this.form.firstName,
+                firstName: this.form.password,
+                lastName: this.form.lastName,
+                address: this.form.address      
+            })
+          this.$emit('close')
+        } catch (e) {
+          this.isLoading = false
+          console.log(e)
+        }
+      },
+    closeModal() {
+      this.$emit('close')
+    } 
+  }
+}
+</script>
+
+<style scoped>
+ .modal {
+  display: block;
+  position: fixed;
+  left: 40%;
+  top: 40%;
+  width: 551px;
+  height: 300px;
+  overflow: auto;
+  background-color: #8BC34A;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid black;
+}
+
+.modal h1 {
+margin-bottom: 30px;
+}
+
+.modal button {
+background-color: black;
+color: white;
+margin-left:0px;
+margin-left: 109px;
+margin-top: 15px;
+
+}
+</style>
