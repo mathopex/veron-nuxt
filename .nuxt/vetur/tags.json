@@ -1,4 +1,10 @@
 {
+  "ModalConnexion": {
+    "description": "Auto imported from components/modalConnexion.vue"
+  },
+  "ModalInscription": {
+    "description": "Auto imported from components/modalInscription.vue"
+  },
   "PresentationPage": {
     "description": "Auto imported from components/PresentationPage.vue"
   }

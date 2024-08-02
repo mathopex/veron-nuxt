@@ -1,7 +1,8 @@
 <template>
-  <div class="container-fluid">
-    <div class="section" id="section1">
-        <div class="flex col-md-12">
+    <div class="container-fluid">
+        <modalConnexion/>
+        <div class="section" id="section1">
+            <div class="flex col-md-12">
             <div class="col-md-4 flex-veron">
                 <p>Ver<font-awesome-icon icon="lock"/>n</p>
             </div>
@@ -17,7 +18,7 @@
             <div class="col-md-4">
                 <div class="flex-button">
                     <button class="noir">Sign Up</button>
-                    <button>Login</button>
+                    <button @click="showModal = true">Login</button>
                 </div>
             </div>
         </div>
@@ -39,7 +40,6 @@
                 </div>
                 <div class="col-md-5">
                     <span>Finance the development of the application</span>
-
                 </div>
             </div>
             <div>
@@ -121,11 +121,16 @@
     </div>
   </div>
 </template>
-
 <script>
-
+ import modalConnexion from './modalConnexion.vue'
 export default {
-  name: 'PresentationPage',
+    components: { modalConnexion },
+    name: 'PresentationPage',
+    data() {
+        return {
+            showModal: false
+        }
+    }
 }
 </script>
 <style scoped>
