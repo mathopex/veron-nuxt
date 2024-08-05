@@ -53,7 +53,7 @@ const ApiService = {
 
     patch(resource, params) {
         this.setHeader()
-        return axios.patch(`${ resource }`, params, { headers: { 'Content-Type': 'application/merge-patch+json' } })
+        return axios.patch(`${ resource }`, params, { headers: { 'Content-Type': 'application/json' } })
     },
 
     delete(resource) {

@@ -1,6 +1,6 @@
-export const ModalConnexion = () => import('../..\\components\\modalConnexion.vue' /* webpackChunkName: "components/modal-connexion" */).then(c => wrapFunctional(c.default || c))
-export const ModalInscription = () => import('../..\\components\\modalInscription.vue' /* webpackChunkName: "components/modal-inscription" */).then(c => wrapFunctional(c.default || c))
-export const PresentationPage = () => import('../..\\components\\PresentationPage.vue' /* webpackChunkName: "components/presentation-page" */).then(c => wrapFunctional(c.default || c))
+export { default as ModalConnexion } from '../..\\components\\modalConnexion.vue'
+export { default as ModalInscription } from '../..\\components\\modalInscription.vue'
+export { default as PresentationPage } from '../..\\components\\PresentationPage.vue'
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {

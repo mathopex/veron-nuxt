@@ -8,7 +8,7 @@
         </div>
         <div class="form-group ">
           <label for="password" class="password">Mot de passe :</label>
-          <input type="password" id="password" name="password" v-model="form.password">
+          <input type="password" id="password" name="password" v-model="form.plainPassword">
         </div>
         <div class="form-group ">
           <label for="firstName" class="firstName">First Name :</label>
@@ -39,7 +39,7 @@ export default {
       return {
           form: {
             email: '',
-            password: '',
+            plainPassword: '',
             firstName: '',
             lastName: '',
             address: ''
@@ -51,8 +51,8 @@ export default {
         try {
             this.$store.dispatch(`registerModule/${[REGISTER_USER]}`, {
                 email: this.form.email,
-                password: this.form.firstName,
-                firstName: this.form.password,
+                plainPassword: this.form.plainPassword,
+                firstName: this.form.firstName,
                 lastName: this.form.lastName,
                 address: this.form.address      
             })
