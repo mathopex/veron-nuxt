@@ -1,9 +1,9 @@
 <template>
-      <div v-show="show === true" class="modal">
+      <div v-show="showConexion === true" class="modal" @click.self="closeModal">
         <h1>SignIn/connexion</h1>
         <form @submit.prevent="onSubmit">
           <div class="form-group">
-            <label for="email" style="    margin-left: 22px; margin-bottom: 15px;">Identifiant :</label>
+            <label for="email" clas="identyfiant">Identifiant :</label>
             <input type="text" id="email" name="email" v-model="form.email">
           </div>
           <div class="form-group">
@@ -20,7 +20,7 @@
   import { LOGIN } from '~/store/storeConst/actions.type'
   export default {
     name: 'ModalConnexion',
-    props: ['show'],
+    props: ['showConexion'],
     data(){
         return {
             form: {
@@ -31,7 +31,6 @@
     },
     methods: {
       async onSubmit() {
-          this.isLoading = true
           try {
             await this.$store.dispatch(`authModule/${LOGIN}`, {
               email: this.form.email,
@@ -39,7 +38,6 @@
             })
             this.$emit('close')
           } catch (e) {
-            this.isLoading = false
             console.log(e)
           }
         },
@@ -79,6 +77,11 @@
   margin-left: 109px;
   margin-top: 15px;
 
+}
+
+.identyfiant{
+  margin-left: 22px; 
+  margin-bottom: 15px;
 }
   </style>
   

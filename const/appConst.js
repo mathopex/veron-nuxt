@@ -1,7 +1,7 @@
 let BASE_URL
 
 if (process.env.NODE_ENV === 'production') {
-  BASE_URL = 'http://api.veron-app.com/'
+  BASE_URL = 'https://api.veron-app.com/'
 } else {
   BASE_URL = 'https://127.0.0.1:8000'
 }

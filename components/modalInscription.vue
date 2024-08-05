@@ -2,26 +2,26 @@
     <div v-show="show === true" class="modal">
       <h1>SignIn/connexion</h1>
       <form @submit.prevent="onSubmit">
-        <div class="form-group">
-          <label for="email" style="margin-left: 22px; margin-bottom: 15px;">Email :</label>
+        <div class="form-group ">
+          <label for="email" class="email">Email :</label>
           <input type="text" id="email" name="email" v-model="form.email">
         </div>
-        <div class="form-group">
-          <label for="password">Mot de passe :</label>
+        <div class="form-group ">
+          <label for="password" class="password">Mot de passe :</label>
           <input type="password" id="password" name="password" v-model="form.password">
         </div>
-        <div class="form-group">
-          <label for="firstName">First Name :</label>
+        <div class="form-group ">
+          <label for="firstName" class="firstName">First Name :</label>
           <input type="text" id="firstName" name="firstName" v-model="form.firstName">
         </div>
 
         <div class="form-group">
-          <label for="lastName">Last Name :</label>
+          <label for="lastName" class="lastName">Last Name :</label>
           <input type="text" id="lastName" name="lastName" v-model="form.lastName">
         </div>
 
-        <div class="form-group">
-          <label for="address">Last Name :</label>
+        <div class="form-group address">
+          <label for="address" >Address :</label>
           <input type="text" id="address" name="address" v-model="form.address">
         </div>
         <button type="submit" class="btn">Inscription</button>
@@ -76,7 +76,7 @@ export default {
   left: 40%;
   top: 40%;
   width: 551px;
-  height: 300px;
+  height: 400px;
   overflow: auto;
   background-color: #8BC34A;
   border-radius: 20px;
@@ -98,5 +98,25 @@ margin-left:0px;
 margin-left: 109px;
 margin-top: 15px;
 
+}
+
+.email {
+  margin-left: 18px;
+}
+
+.password {
+  margin-left: -39px;
+}
+
+.firstName {
+  margin-left: -20px;
+
+}
+.lastName {
+  margin-left: -18px;
+}
+
+form div{
+  margin-bottom: 10px;
 }
 </style>

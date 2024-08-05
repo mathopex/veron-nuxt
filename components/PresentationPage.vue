@@ -1,7 +1,7 @@
 <template>
     <div class="container-fluid">
-        <modalConnexion :show="showModal" @close="showModal = false"/>
-        <modalInscription :show="showModal" @close="showModal = false"/>
+        <modalConnexion :showConexion="showModalConexion" @close="showModalConexion = false"/>
+        <modalInscription :show="showModalInscription" @close="showModalInscription = false"/>
         <div class="section" id="section1">
             <div class="flex col-md-12">
             <div class="col-md-4 flex-veron">
@@ -130,16 +130,20 @@ export default {
     name: 'PresentationPage',
     data() {
         return {
-            showModal: false
-        }
+            showModalConexion: false,
+            showModalInscription: false
+        } 
     },
 
     methods: {
         modalInscription(){
-            this.showModal = true
+            this.showModalInscription = true
+            this.showModalConexion = false
+            
         },
         modalConnexion() {
-            this.showModal = true
+            this.showModalConexion = true
+            this.showModalInscription =  false
         }
     }
 }
