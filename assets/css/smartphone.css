@@ -1,0 +1,51 @@
+/* CSS spécifique pour les smartphones */
+@media (max-width: 600px) {
+  .section {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .navBar div {
+    margin-top: 0px !important;
+}
+
+
+.flex-button button {
+  height: 33px !important;
+  width: 68px !important;
+  margin: 0 5px !important;
+
+}
+
+
+.flex-veron,
+.flex-button {
+    flex-direction: row;
+    justify-content: flex-start !important;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .flex-ul {
+    gap: 50px;
+  }
+
+
+  .titre {
+    margin-top: 55px !important;
+    text-align: center;
+    font-size: 39px !important;
+  }  
+
+  .button-app {
+    margin-top: 0px !important;
+}
+
+  .button-app button {
+    border-radius: 5px;
+    background-color: rgba(146, 208, 80, 0);
+    width: 118px !important;
+    height: 56px !important;
+    font-size: 14px !important;
+  }
+}
