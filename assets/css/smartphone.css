@@ -60,4 +60,8 @@
     width: 445px !important;
     height: 30px !important;
   }
+
+  .cadre-info {
+    display: block;
+}
 }

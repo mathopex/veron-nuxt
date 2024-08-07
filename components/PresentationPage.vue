@@ -45,7 +45,7 @@
                 </div>
             </div>
             <div>
-                <progress class="col-md-10" value="20000" max="100000"></progress>
+                <progress class="" value="20000" max="100000"></progress>
             </div>
             <div class="col-md-10 col-sm-10 text-dons-bas">
                 <span>Objectif : 100 000€</span>
