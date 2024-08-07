@@ -34,7 +34,7 @@
         </div>
     </div>
     <div class="section" id="section2">
-        <div class="cadre-dons col-md-9">
+        <div class="cadre-dons col-md-9 col-sm-11">
             <div class="col-md-8 text-dons-haut">
                 <div class="col-md-5">
                     <span>1000€</span>
@@ -47,7 +47,7 @@
             <div>
                 <progress class="col-md-10" value="20000" max="100000"></progress>
             </div>
-            <div class="col-md-10 text-dons-bas">
+            <div class="col-md-10 col-sm-10 text-dons-bas">
                 <span>Objectif : 100 000€</span>
                 <span>en cours</span>
             </div>
