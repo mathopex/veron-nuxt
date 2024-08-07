@@ -44,8 +44,8 @@
                     <span>Finance the development of the application</span>
                 </div>
             </div>
-            <div>
-                <progress class="" value="20000" max="100000"></progress>
+            <div class="col-md-10 col-sm-10">
+                <progress class="col-md-12 col-sm-12" value="20000" max="100000"></progress>
             </div>
             <div class="col-md-10 col-sm-10 text-dons-bas">
                 <span>Objectif : 100 000€</span>
