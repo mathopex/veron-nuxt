@@ -1,5 +1,5 @@
 /* CSS spécifique pour les smartphones */
-@media (max-width: 600px){
+@media (min-width: 372px) and (max-width: 575.98px){
   .section {
       flex-direction: column;
       align-items: center;
@@ -27,8 +27,9 @@
   }
 
   .flex-ul {
-    gap: 50px;
+    gap: 11%;
     flex-wrap: wrap;  
+    justify-content: flex-start !important;
   }
 
 
@@ -40,13 +41,13 @@
 
   .button-app {
     margin-top: 0px !important;
+
+
 }
 
   .button-app button {
     border-radius: 5px;
     background-color: rgba(146, 208, 80, 0);
-    width: 118px !important;
-    height: 56px !important;
     font-size: 14px !important;
   }
 
@@ -64,4 +65,19 @@
   .cadre-info {
     display: block !important;
 }
+
+.container-info {
+ flex-direction: column;
+}
+.partner-container .partner {
+  display: block;
+}
+
+.partner-container .partner img{
+  width:  300px;
+}
+
+
+
+
 }
