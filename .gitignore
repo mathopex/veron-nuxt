@@ -37,8 +37,6 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
-.nuxt
-dist
 
 # TypeScript v1 declaration files
 typings/
@@ -67,7 +65,6 @@ typings/
 # next.js build output
 .next
 
-
 # Serverless directories
 .serverless
 
@@ -83,4 +80,6 @@ sw.*
 # Vim swap files
 *.swp
 
-
+# Nuxt.js build output
+dist
+.nuxt

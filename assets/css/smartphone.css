@@ -1,5 +1,5 @@
 /* CSS spécifique pour les smartphones */
-@media only screen and (max-width: 600px) and (orientation: portrait) {
+@media (max-width: 600px){
   .section {
       flex-direction: column;
       align-items: center;
@@ -62,6 +62,6 @@
   }
 
   .cadre-info {
-    display: block;
+    display: block !important;
 }
 }

@@ -116,7 +116,6 @@
   progress {
       border: 2px solid black;
         border-radius: 0;
-        width: 1600px;
         height: 40px;
   }
   progress::-webkit-progress-bar {
@@ -135,7 +134,7 @@
   #section2 span {
       color: #92D050;
       font-weight: 500;
-      font-size: 25px;
+      font-size: 120%;
   }
   
   .cadre-info {
