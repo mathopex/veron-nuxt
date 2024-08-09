@@ -7,7 +7,7 @@
             <input type="text" id="email" name="email" v-model="form.email">
           </div>
           <div class="form-group">
-            <label for="password">Mot de passe :</label>
+            <label for="password" class="marginTL">Mot de passe :</label>
             <input type="password" id="password" name="password" v-model="form.password">
           </div>
           <button type="submit" class="btn">Connexion</button>
@@ -57,7 +57,7 @@
     width: 551px;
     height: 300px;
     overflow: auto;
-    background-color: #8BC34A;
+    background: linear-gradient(180deg, rgba(146,208,80,1) 0%, rgba(207,234,177,1) 89%, rgba(255,255,255,1) 115%);
     border-radius: 20px;
     display: flex;
     justify-content: center;
@@ -83,5 +83,10 @@
   margin-left: 22px; 
   margin-bottom: 15px;
 }
-  </style>
+
+.marginTL{
+  margin-left: -24px;
+  margin-top: 15px;
+}
+</style>
   

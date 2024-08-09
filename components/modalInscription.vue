@@ -1,5 +1,5 @@
 <template>
-    <div v-show="show === true" class="modal">
+    <div v-show="showInscription === true" class="modal" @click.self="closeModal" >
       <h1>SignIn/connexion</h1>
       <form @submit.prevent="onSubmit">
         <div class="form-group ">
@@ -33,8 +33,7 @@
 <script>
 import { REGISTER_USER } from '~/store/storeConst/actions.type'
 export default {
-  name: 'ModalConnexion',
-  props: ['show'],
+  props: ['showInscription'],
   data(){
       return {
           form: {
@@ -78,7 +77,7 @@ export default {
   width: 551px;
   height: 400px;
   overflow: auto;
-  background-color: #8BC34A;
+  background: linear-gradient(180deg, rgba(146,208,80,1) 0%, rgba(207,234,177,1) 89%, rgba(255,255,255,1) 115%);
   border-radius: 20px;
   display: flex;
   justify-content: center;
