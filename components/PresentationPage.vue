@@ -35,21 +35,29 @@
     </div>
     <div class="section" id="section2">
         <div class="cadre-dons col-md-9 col-sm-9">
-            <div class="col-md-10 col-sm-10 text-dons-haut">
+            <div class="col-md-6 col-sm-6 text-dons-haut">
+                    <span>Finance the development of the application</span>
+            </div>
+            <div class="col-md-10 col-sm-10 cadre-don-centre">
                 <div class="col-md-5 col-sm-5">
                     <span>1000€</span>
 
                 </div>
-                <div class="col-md-6 col-sm-6">
-                    <span>Finance the development of the application</span>
+                <div class="col-md-10 col-sm-10">
+                    <progress class="col-md-12 col-sm-12" value="20000" max="100000"></progress>
+                </div>
+                <div class="col-md-10 col-sm-10 text-dons-bas">
+                    <span>Objectif : 100 000€</span>
+                    <span>en cours</span>
                 </div>
             </div>
-            <div class="col-md-10 col-sm-10">
-                <progress class="col-md-12 col-sm-12" value="20000" max="100000"></progress>
-            </div>
-            <div class="col-md-10 col-sm-10 text-dons-bas">
-                <span>Objectif : 100 000€</span>
-                <span>en cours</span>
+            <div class="cadre-don-centre-img col-md-12">
+                <div>
+                    <button><img src="paypal.png"></button>
+                </div>
+                <div>
+                    <button><img src="cartes.png"></button>
+                </div>
             </div>
         </div>
         <div class="flex-center col-md-12 col-sm-12">
@@ -67,7 +75,7 @@
                             <p>Elle répond à deux impératifs : côté entreprises, il s’agit de disposer de solutions facilement intégrables à leurs applications et conformes à la réglementation.</p>
                         </div>
                     </div>
-                    <div>
+                    <div class="img">
                         <img src="logoHomme1.png"/>
                     </div>
                 </div>
@@ -83,7 +91,7 @@
                             <p>Vous souhaitez mettre de l’argent de cote, vous pensez quand le laissant dans votre compte bancaire vous risquerais d’être prélevé </p>
                         </div>
                     </div>
-                    <div>
+                    <div class="img">
                         <img src="logoHomme2.png"/>
                     </div>
                 </div>
@@ -99,7 +107,7 @@
                             <p>Veron est littéralement un portefeuille comme celle que vous porté dans votre poche,En seulement numérique, vous pouvait l’utilisez quand cela vous semble.</p>
                         </div>
                     </div>
-                    <div>
+                    <div class="img">
                         <img src="logoHomme3.png"/>
                     </div>
                 </div>
@@ -121,7 +129,7 @@
                                 <p>Si une entreprise fait défaut sur l'un de ces domaines, il y a de grande chances pour que vous ne lui fassiez plus (jamais) confiance. C'est pourquoi nous tenons à être extrêmement clairs sur nos exigences en la matière.</p>
                         </div>
                     </div>
-                    <div>
+                    <div class="img">
                         <img src="logoHomme4.png"/>
                     </div>
                 </div>
