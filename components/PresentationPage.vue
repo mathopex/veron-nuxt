@@ -5,7 +5,7 @@
         <div class="section" id="section1">
             <div class="flex col-md-12 col-sm-12" id="hautPage">
             <div class="col-md-4 col-sm-4 flex-veron">
-                <p>Ver<font-awesome-icon icon="lock"/>n</p>
+                <p>Ver<img src="cadena.png">n</p>
             </div>
             <div class="col-md-4 col-sm-4">
                 <div class="flex-button">
@@ -39,9 +39,8 @@
                     <span>Finance the development of the application</span>
             </div>
             <div class="col-md-10 col-sm-10 cadre-don-centre">
-                <div class="col-md-5 col-sm-5">
+                <div class="col-md-5 col-sm-5 montant-don">
                     <span>1000€</span>
-
                 </div>
                 <div class="col-md-10 col-sm-10">
                     <progress class="col-md-12 col-sm-12" value="20000" max="100000"></progress>
@@ -75,9 +74,6 @@
                             <p>Elle répond à deux impératifs : côté entreprises, il s’agit de disposer de solutions facilement intégrables à leurs applications et conformes à la réglementation.</p>
                         </div>
                     </div>
-                    <div class="img">
-                        <img src="logoHomme1.png"/>
-                    </div>
                 </div>
                 <div class="col-md-5 col-sm-3 container-info">
                     <div>
@@ -91,9 +87,6 @@
                             <p>Vous souhaitez mettre de l’argent de cote, vous pensez quand le laissant dans votre compte bancaire vous risquerais d’être prélevé </p>
                         </div>
                     </div>
-                    <div class="img">
-                        <img src="logoHomme2.png"/>
-                    </div>
                 </div>
                 <div class="col-md-5 col-sm-3 container-info" >
                     <div>
@@ -106,9 +99,6 @@
                             <p>Veron n ’a pas pour but tout cela nous analysons pas les rentrée d’argent de nos clients, l’appli offre pas de conseils pour aider l’utilisateurs à mieux gérer son épargne comme les application cité.</p>
                             <p>Veron est littéralement un portefeuille comme celle que vous porté dans votre poche,En seulement numérique, vous pouvait l’utilisez quand cela vous semble.</p>
                         </div>
-                    </div>
-                    <div class="img">
-                        <img src="logoHomme3.png"/>
                     </div>
                 </div>
                 <div class="col-md-5 col-sm-3 container-info">
@@ -129,9 +119,6 @@
                                 <p>Si une entreprise fait défaut sur l'un de ces domaines, il y a de grande chances pour que vous ne lui fassiez plus (jamais) confiance. C'est pourquoi nous tenons à être extrêmement clairs sur nos exigences en la matière.</p>
                         </div>
                     </div>
-                    <div class="img">
-                        <img src="logoHomme4.png"/>
-                    </div>
                 </div>
             </div>
         </div>
@@ -151,7 +138,7 @@
     <div class="section" id="section1">
         <div class="flex col-md-12">
             <div class="col-md-4 flex-veron">
-                <a href="#hautPage">Ver<font-awesome-icon icon="lock"/>n</a>
+                <a href="#hautPage">Ver<img src="cadena.png">n</a>
             </div>
             <div class="col-md-4">
                 <ul class="flex-ul">
@@ -169,11 +156,18 @@
                 </div>
             </div>
         </div>
-        <div class="button-app-footer" > 
-            <div>  
-                <span>Veron.App@hotmail.com</span>
+        <div class="button-app-footer col-md-12" > 
+            <div class="mentionLegal col-md-6">
+                <div style="margin: 30px 0px;">   
+                    <span class="mail">Veron.App@hotmail.com</span>
+                </div>
+
+                <div>  
+                    <a @click="mention()"><span class="legal">Legal</span></a> | 
+                    <a><span>FAQ</span></a>
+                </div>
             </div>
-           <div class="button-app">
+           <div class="button-app col-md-6">
             <button><img src="applePay.jpg" /></button>
             <button><img src="googlePlay.png"/></button>
            </div>
@@ -206,6 +200,9 @@ export default {
         modalConnexion() {
             this.showModalConexion = true
             this.showModalInscription =  false
+        },
+        mention() {
+            this.$router.push('/mention')
         }
     }
 }

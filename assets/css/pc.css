@@ -1,25 +1,42 @@
 @import url('../Satoshi_Complete/Fonts/WEB/css/satoshi.css');
 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex-veron img {
+  width: 50px;
+}
+
+.container-fluid {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+} 
 
 body {
   font-family: 'Satoshi', sans-serif;
 }
 
 .container-fluid {
-    color: rgb(0, 0, 0)
+    color: rgb(255, 255, 255)
   }
   
   .section {
-    width: 98.5vw;
+    width: 100%;
     overflow: hidden;
   }
   
   #section1 {
-    background: linear-gradient(180deg, rgba(146,208,80,1) 0%, rgba(207,234,177,1) 89%, rgba(255,255,255,1) 115%);
+    background: radial-gradient(circle, rgba(30,186,188,1)0%, rgba(34,50,75,1)100%);
   }
 
   #section1 a {
-  color: white;
+  color: rgb(255, 255, 255);
   cursor: pointer;
   text-decoration: none;
   }
@@ -113,8 +130,8 @@ body {
   }
   
   .cadre-dons {
-    border: 2px solid #92D050;
-    background: linear-gradient(180deg, rgba(146, 208, 80, 0.52) 0%, rgba(207, 234, 177, 1) 89%, rgba(255, 255, 255, 1) 115%);
+    border: 2px solid rgba(30,186,188,1);
+    background: radial-gradient(circle, rgba(30,186,188,1)0%, rgba(34,50,75,1)100%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -126,13 +143,17 @@ body {
   progress {
     background: rgb(128,126,126);
     background: linear-gradient(274deg, rgba(128,126,126,1) 0%, rgba(255,252,252,1) 100%);
-    border: 2px solid #92D050;
+    border: 2px solid rgba(30,186,188,1);
     border-radius: 0;
     height: 40px;
   }
   progress::-webkit-progress-bar {
     background-color: #92d05000;
   }
+  
+  progress::-webkit-progress-value {
+    background-color: rgba(30,186,188,1); /* Couleur de la barre de progression */
+}
   
   .text-dons-haut {
     display: flex;
@@ -142,7 +163,14 @@ body {
   }
   .cadre-don-centre {
     background-color: white;
-    border: 2px solid #92D050;
+    border: 2px solid rgba(30,186,188,1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .montant-don{
+    margin-right: 652px;
   }
   .cadre-don-centre-img {
     display: flex;
@@ -161,14 +189,8 @@ body {
   }
   
   #section2 span {
-      color: #92D050;
+      color: rgba(30,186,188,1);
       font-weight: 500;
-      font-size: 120%;
-  }
-
-  .container-info {
-    display: flex;
-    align-items: center;
   }
 
   .cadre-info {
@@ -180,19 +202,10 @@ body {
  
   
   .infos {
-      border: 2px solid #92D050;
-      background: linear-gradient(180deg, rgb(146 208 80 / 52%) 0%, rgba(207, 234, 177, 1) 89%, rgba(255, 255, 255, 1) 115%);
+      border: 2px solid rgba(30,186,188,1);
+      background: radial-gradient(circle, rgba(30,186,188,1)0%, rgba(34,50,75,1)100%);
       margin-top: 30px;
       padding: 5px 5px;
-      /* text-shadow: 
-      1px 1px 0 black,
-      -1px -1px 0 black,
-      -1px 1px 0 black,
-      1px -1px 0 black,
-      1px 0 0 black,
-      -1px 0 0 black,
-      0 1px 0 black,
-      0 -1px 0 black; */
   }
 
   .center {
@@ -226,4 +239,14 @@ body {
   .partner {
     display: flex;
     justify-content: space-around;
+  }
+  .mentionLegal {
+    text-align: center;
+  }
+
+  .mentionLegal .mail {
+    margin-left: -370px;
+  }
+  .mentionLegal .legal {
+    margin-left: -464px;
   }
