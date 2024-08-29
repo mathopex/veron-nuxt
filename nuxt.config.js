@@ -24,7 +24,8 @@ export default {
   plugins: [
     { src: '~/plugins/api-platform.js' },
     { src: '~/plugins/refreshToken.js'},
-    { src: '~/plugins/persistedState.client.js'}
+    { src: '~/plugins/persistedState.client.js'},
+    { src: '~/plugins/v-scroll.js'}
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

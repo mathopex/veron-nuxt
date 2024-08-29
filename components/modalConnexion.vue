@@ -50,6 +50,7 @@
   
   <style scoped>
    .modal {
+    color: white;
     display: block;
     position: fixed;
     left: 40%;
@@ -57,7 +58,7 @@
     width: 551px;
     height: 300px;
     overflow: auto;
-    background: linear-gradient(180deg, rgba(146,208,80,1) 0%, rgba(207,234,177,1) 89%, rgba(255,255,255,1) 115%);
+    background: radial-gradient(circle, rgba(30,186,188,1)0%, rgba(34,50,75,1)100%);
     border-radius: 20px;
     display: flex;
     justify-content: center;

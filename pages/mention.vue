@@ -1,6 +1,9 @@
 <template>
     <div class="mention-legal">
         <h2>Mentions légales et politique de confidentialité</h2>
+        
+        </br></br>
+
         <p>
             L'entreprise individuelle Veron ,soucieuse des droits des individus, notamment au regard des traitements
             automatisés et dans une volonté de transparence avec ses clients, a mis en place une politique reprenant l’
@@ -16,8 +19,9 @@
             La version actuellement en ligne de ces conditions d'utilisation est la seule opposable pendant toute la durée
             d'utilisation du site et jusqu'à ce qu'une nouvelle version la remplace.
         </p>
+    </br></br>
 
-        <h4>Article 1 - Mentions légales</h4>
+        <h5>Article 1 - Mentions légales</h5>
         <p>
             <u>1.1 Site (ci-après « le site ») :</u>
             Veron-app.com
@@ -42,6 +46,7 @@
             Un délégué à la protection des données : l’OFII, dpo@ofii.fr., est à votre disposition pour toute question
             relative à la protection de vos données personnelles.
         </p>
+        </br></br>
 
         <h5>Article 2 - Accès au site</h5>
         <p>
@@ -50,6 +55,9 @@
             publicitaires et pour toute forme de sollicitation commerciale et notamment l'envoi de courriers
             électroniques non sollicités.
         </p>
+
+        </br></br>
+
         <h5>Article 3 - Contenu du site</h5>
         <p>
             Toutes les marques, photographies, textes, commentaires, illustrations, images animées ou non, séquences
@@ -63,6 +71,8 @@
             ne vaut pas acceptation desdites utilisations et renonciation aux poursuites.
         </p>
 
+        </br></br>
+
         <h5>Article 4 - Gestion du site</h5>
         <p>
             Pour la bonne gestion du site, l'éditeur pourra à tout moment :
@@ -72,6 +82,8 @@
             lois nationales ou internationales ;
             - suspendre le site afin de procéder à des mises à jour.
         </p>
+
+        </br></br>
 
         <h5>Article 5 - Responsabilités</h5>
         <p>
@@ -89,6 +101,8 @@
             il pourra se retourner contre vous pour obtenir l'indemnisation de tous les préjudices, sommes,
             condamnations et frais qui pourraient découler de cette procédure.
         </p>
+
+        </br></br>
 
         <h5>Article 6 - Liens hypertextes</h5>
         <p>
@@ -108,6 +122,8 @@
             Le délégué à la protection des données : l’OFII, dpo@ofii.fr., est à votre disposition pour toute question
             relative à la protection de vos données personnelles.
         </p>
+
+        </br></br>
 
         <h5>Article 8 - Droit d’accès, de rectification et de déréférencement de vos données</h5>
         <p>
@@ -148,6 +164,8 @@
             auprès de la CNIL, car nous sommes à votre entière disposition pour régler votre problème.
         </p>
 
+        </br></br>
+
         <h5>Article 9 - Utilisation des données</h5>
         <p>
             Les données personnelles collectées auprès des utilisateurs ont pour objectif la mise à disposition des
@@ -166,6 +184,8 @@
             - envoi d'informations commerciales et publicitaires, en fonction des préférences de l'utilisateur ;
         </p>
 
+        </br></br>
+
         <h5>Article 10 - Politique de conservation des données</h5>
         <p>
             La Plateforme conserve vos données pour la durée nécessaire pour vous fournir ses services ou
@@ -175,6 +195,9 @@
             nous pouvons également conserver certaines de vos informations si nécessaire, même après que vous ayez
             fermé votre compte ou que nous n'ayons plus besoin pour vous fournir nos services.
         </p>
+
+
+        </br></br>
 
         <h5>Article 11- Partage des données personnelles avec des tiers</h5>
 
@@ -190,6 +213,9 @@
             - si la loi l'exige, la Plateforme peut effectuer la transmission de données pour donner suite aux réclamations
             présentées contre la Plateforme et se conformer aux procédures administratives et judiciaires.
         </p>
+
+        </br></br>
+
         <h5>Article 12 - Offres commerciales</h5>
         <p>
             Qu’est-ce qu’un « cookie » ?
@@ -219,34 +245,55 @@
             - DoubleClick : cookies publicitaires de Google pour diffuser des bannières.
             La durée de vie de ces cookies est de treize mois.
         </p>
-     <h5>Article 14 - Photographies et représentation des produits</h5>
-     <p>
-         Les photographies de produits, accompagnant leur description, ne sont pas contractuelles et n'engagent pas
-         l'éditeur.
-     </p>
 
-     <h5>Article 15 - Loi applicable</h5>
-     <p>
-        Les présentes conditions d'utilisation du site sont régies par la loi française et soumises à la compétence des
-        tribunaux du siège social de l'éditeur, sous réserve d'une attribution de compétence spécifique découlant
-        d'un texte de loi ou réglementaire particulier.
-     </p>
+        </br></br>
 
-     <h5>Article 16 - Contactez-nous</h5>
-     <p>
-        Pour toute question, information sur les produits présentés sur le site, ou concernant le site lui-même, vous
-        pouvez laisser un message à l'adresse suivante : veron.appl@hotmail.com.
+        <h5>Article 14 - Photographies et représentation des produits</h5>
+        <p>
+            Les photographies de produits, accompagnant leur description, ne sont pas contractuelles et n'engagent pas
+            l'éditeur.
+        </p>
 
-        Ces mentions légales et politique de confidentialité ont été créées sur le site Rocket Lawyer.
-     </p>
+        </br></br>
+
+        <h5>Article 15 - Loi applicable</h5>
+        <p>
+            Les présentes conditions d'utilisation du site sont régies par la loi française et soumises à la compétence des
+            tribunaux du siège social de l'éditeur, sous réserve d'une attribution de compétence spécifique découlant
+            d'un texte de loi ou réglementaire particulier.
+        </p>
+
+        </br></br>
+
+        <h5>Article 16 - Contactez-nous</h5>
+        <p>
+            Pour toute question, information sur les produits présentés sur le site, ou concernant le site lui-même, vous
+            pouvez laisser un message à l'adresse suivante : veron.appl@hotmail.com.
+
+            Ces mentions légales et politique de confidentialité ont été créées sur le site Rocket Lawyer.
+        </p>
 
     </div>
 </template>
 
 <style>
 
+.mention-legal h2 {
+    text-align: center;
+}
+
+.mention-legal {
+    background: radial-gradient(circle, rgba(30,186,188,1)0%, rgba(34,50,75,1)100%);
+
+}
+
+.mention-legal h2, .mention-legal h5 {
+    color: white;
+}
+
 .mention-legal p {
-width: 50%;
+    color: white;
+    width: 50%;
 }
 
 </style>
