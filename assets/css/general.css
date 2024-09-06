@@ -1,0 +1,125 @@
+/* Import des polices */
+@import url('../Satoshi_Complete/Fonts/WEB/css/satoshi.css');
+@import url('../Poppins_Complete/Fonts/WEB/css/poppins.css');
+
+/* Styles globaux pour le HTML et le body */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Satoshi', sans-serif;
+}
+
+/* Container global */
+.container-fluid {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: rgb(0, 0, 0);
+}
+
+/* Grid container */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.flex-veron img {
+    width: 26px;
+}
+
+/* Flexbox utilitaires */
+.navBar {
+    display: flex;
+    justify-content: center;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.flex-ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-button {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 60px;
+}
+
+.flex-button button {
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+    width: 120px;
+    margin: 0 15px;
+}
+
+.flex-button .noir {
+    background-color: black;
+    color: white;
+}
+
+.flex-veron {
+    display: flex;
+    justify-content: space-around;
+    font-size: 50px;
+    margin-top: -20px;
+}
+
+/* Boutons d'application */
+.button-app {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button-app-footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.button-app button, .button-app-footer button {
+    border: none;
+    background-color: transparent;
+}
+
+/* Liens généraux */
+#section1Haut a, #section1Bas a {
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* Copyright */
+.copyright {
+    width: 100%;
+    display: grid;
+    justify-content: end;
+    font-size: small;
+}
+
+/* Divers */
+.applePay {
+    border-radius: 10px;
+    width: 136px !important;
+}
+
+.titre {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 100px;
+}
+
+.google-play {
+    margin: 0px 30px;
+    font-size: 30px !important;
+}
