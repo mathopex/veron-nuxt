@@ -17,6 +17,9 @@
   .flex-veron p{
     margin: 7px 14px;
   }
+  .flex-veron img {
+    width: 13px !important;
+}
 
   /* Listes et boutons */
   #section1Bas ul li, #section1Haut ul li {
@@ -154,7 +157,7 @@
 
 .about-container img {
   width: 100% !important; /* Image à 100% de la largeur pour mobile */
-  max-width: 300px;
+  max-width: 250px;
   margin-bottom: 20px; /* Espacement entre l'image et le texte */
 }
 
@@ -170,7 +173,7 @@
 
 .product-container img {
   width: 100% !important;
-  max-width: 300px;
+  max-width: 250px;
   margin-top: 20px; /* Espacement entre le texte et l'image */
 }
 
@@ -186,7 +189,7 @@
 
 .mobile-img img {
   width: 100% !important;
-  max-width: 300px;
+  max-width: 250px;
   margin-bottom: 20px;
 }
 
@@ -210,7 +213,7 @@
 
 .security-img img {
   width: 100% !important;
-  max-width: 300px;
+  max-width: 250px;
   margin-bottom: 20px;
 }
 
@@ -231,7 +234,7 @@
 }
 .suppor-img-mobile img {
   width: 100% !important;
-  max-width: 300px;
+  max-width: 250px;
   margin-bottom: 20px;
 }
 
@@ -242,7 +245,7 @@
   transform: translateY(-132%) !important;
 }
 .support-img-appli img {
-  width: 200px !important;
+  width: 160px !important;
 }
 
 .support-text {
@@ -261,7 +264,7 @@
 
 .veron-pc img {
   width: 100% !important;
-  max-width: 300px;
+  max-width: 250px;
   margin-bottom: 20px;
 }
 
@@ -306,8 +309,8 @@ h5 {
 
 .partner-container img {
   width: 80% !important; /* Ajuste la taille des images pour mobile */
-  max-width: 300px;
-  margin-bottom: 20px; /* Espace entre chaque image */
+  max-width: 250px;
+  margin-bottom: 40px; /* Espace entre chaque image */
 }
 
 }
