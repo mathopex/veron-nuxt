@@ -99,14 +99,6 @@ body {
     text-decoration: none;
 }
 
-/* Copyright */
-.copyright {
-    width: 100%;
-    display: grid;
-    justify-content: end;
-    font-size: small;
-}
-
 /* Divers */
 .applePay {
     border-radius: 10px;

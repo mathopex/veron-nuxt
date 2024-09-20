@@ -144,8 +144,10 @@ body {
   .copyright {
     width: 100%;
     display: grid;
-    justify-content: end;
+    justify-content: center;
     font-size: small;
+    margin-left: -157px;
+    margin-top: 25px;
   }
 
 

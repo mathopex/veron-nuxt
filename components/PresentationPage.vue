@@ -6,7 +6,7 @@
             <div class="grid-container">
                 <div class="flex col-md-12 col-sm-12" id="hautPage">
                     <div class="col-md-4 col-sm-4 flex-veron">
-                        <p>Ver<img src="cadena.png">n</p>
+                        <p>Veron</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-4 button-container">
@@ -28,7 +28,7 @@
             </div>
             <div class="titre">
                 <p>Get Started !</p>
-                <p>The first digital saving safe </p>
+                <p>The first digital saving safe</p>
             </div>
 
             <div class="button-app">
@@ -274,7 +274,7 @@
             <div class="grid-container">
                 <div class="flex col-md-12 col-sm-12">
                     <div class="col-md-4 col-sm-4 flex-veron">
-                        <p><a href="#hautPage">Ver<img src="cadena.png">n</a></p>
+                        <p><a href="#hautPage">Veron</a></p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-4 button-container">
